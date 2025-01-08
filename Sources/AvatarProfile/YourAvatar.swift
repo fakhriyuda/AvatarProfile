@@ -11,6 +11,12 @@ import SwiftUI
 public struct YourAvatar: View {
     let imageName : String
     let name : String
+    
+    public init(imageName: String, name: String) {
+        self.imageName = imageName
+        self.name = name
+    }
+    
     public var body: some View {
         VStack {
             Image(imageName)
